@@ -1,0 +1,43 @@
+site_name: My Docs
+site_url: http://locahost:8000
+nav:
+  - Home: index.md
+  - About: about.md
+  - Contact: contact.md
+  - Deep Dive:
+    - deepDive/page1.md
+    - deepDive/page2.md
+    - deepDive/page3.md
+  - Tags: tags.md
+  - Blog: 
+    - blog/index.md
+
+extra:
+  tags:
+    Sample: sample
+    Geography: geography
+
+plugins:
+  - spellcheck
+  - search
+  - tags:
+      tags_file: tags.md
+  - blog:
+      blog_dir: blog
+      blog_toc: true
+      pagination_per_page: 5
+      authors_profiles: true
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+theme: 
+  name: material
+  icon:
+    tag:
+      sample: material/tag
+      geography: material/tag-arrow-down
+  features:
+    - navigation.indexes
+  
